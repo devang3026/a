@@ -1,0 +1,437 @@
+body 
+{
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+
+  text-align: center;
+  background: #000000;
+}
+
+
+/* Style the top navigation bar */
+navbar {
+  display: flex;
+  background-color: #333;
+  
+}
+/* Style the navigation bar links */
+navbar a {
+  color: white;
+  padding: 1%  7.242%;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#logo{
+  width: 20%;
+  height: 200%;
+  position: relative;
+  left: -165px;
+}
+
+  .carousel-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    left:30px;
+}
+
+.navigation .prev {
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 40%;
+    left: 10px;
+    font-weight: 700;
+  }
+  .navigation .next {
+    right: 10px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 40%;
+  }
+  .navigation .nav-btn {
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .navigation .nav-btn:hover {
+    background: white;
+  }
+
+  
+.carousel {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+  }
+  .carousel img {
+    width: 97%;
+    transition: all 0.3s ease;
+    border:8px solid white;
+  }
+  
+  .item {
+    position: absolute;
+    display: none;
+  }
+  
+  .main {
+    display: block;
+  }
+
+  .blog_tile {
+    background-color: black;
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  #blog_h1 {
+    padding-top: 8px;
+    color: lightgray;
+    text-align: center;
+  }
+
+  .section_contact_us
+  {
+    margin-top: 1%;
+    border:black;
+    height: 340px;
+    border-style: double;
+    border-width: 10px;
+    background-color: lightgray;
+    opacity: 0.85;
+    border-radius: 10px;
+  }
+
+form
+{
+  width: 50%;
+  float: left;
+  margin-top: 2%;
+}
+  label
+{
+    font-weight: bold;
+    margin-left: 1.5%;
+}
+
+#email_border
+{
+    border-style: hidden hidden solid hidden ;
+    border-color: black;
+    background-color: lightgray;
+    margin-left: 1.5%;
+}
+
+#message_border
+{
+    border-style: hidden hidden solid hidden ;
+    border-color: black;
+    background-color: lightgray;
+    margin-left: 1.5%;
+}
+#submit
+{
+    margin-top: 3%;
+    width: 40%;
+    padding: 2% 1% 2% 1%;
+    color: lightgray;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 2%;
+}
+
+#submit:hover
+{
+    cursor: pointer;
+}
+
+.aside_contact_us
+{
+    height: 282px;
+    width:50%;
+    float: left;
+}
+
+#h2_aside
+{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 30%;
+}
+
+a
+{
+    padding-left: 30%;
+    text-decoration: none;
+    color: #323131;
+    position: relative;
+}
+
+p
+{
+    padding-left: 30%;
+    color: #323131;
+    position: relative;
+}
+
+#social_media_logos
+{
+    position: relative;
+    height: 36px;
+    width: fit-content;
+    padding-left: 26%;
+} 
+
+hr
+{
+  width: 80%;
+  size: 14px solid bold;
+}
+
+#faq
+{
+  padding: 0%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#p_faq
+{
+  font-size: large;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5%;
+  opacity: 0.85;
+}
+
+.Customer_Service {
+  width: 50%;
+  float: left;
+  margin-left: 10%;
+}
+
+.About {
+  width: 50%;
+  float: left;
+}
+
+.About h3
+{
+  color: orange;
+  text-align: center;
+}
+
+.Customer_Service h3 {
+  text-align: left;
+  color: orange;
+}
+.Customer_Service li {
+  list-style-type: none;
+  position: relative;
+  left: -35%;
+}
+
+.footer li a 
+{
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+
+.About li {
+  padding-left: 14%;
+}
+
+.copyright
+{
+  background-color: black;
+  opacity: 0.85;
+}
+.copyright p
+{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 2%;
+  margin-top: 0%;
+}
+
+@media screen and (max-width:362px)
+{
+  header {
+    text-align: center;
+    background: #000000;
+    width: 176%;
+}
+row, navbar {
+  flex-direction: column;
+  width: 176%;
+}
+  #logo{
+    width: 45%;
+    height: 500%;
+    left: -90px;
+  }
+
+  .carousel-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    left: 12px;
+}
+.blog_tile {
+  background-color: black;
+  height: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  position: relative;
+  width: 175%;
+}
+
+.section_contact_us {
+  margin-top: 1%;
+  border: black;
+  height: 377px;
+  border-style: double;
+  border-width: 10px;
+  background-color: lightgray;
+  opacity: 0.85;
+  border-radius: 10px;
+  width: 170%;
+}
+
+#p_faq {
+  font-size: medium;
+  padding-left: 19%;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  width: 175%;
+  margin-top: 0.5%;
+  opacity: 0.85;
+}
+
+.About li {
+  padding-left: 28%;
+}
+.About h3 {
+  color: orange;
+  text-align: center;
+  padding-left: 40%;
+}
+.copyright {
+  background-color: black;
+  opacity: 0.85;
+  width: 175%;
+}
+}
+
+@media screen and (max-width:420px) and (min-width:363px)
+{
+  .carousel-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    left: 14px;
+}
+row, navbar {
+  flex-direction: column;
+  width: 169%;
+}
+  #logo{
+    width: 45%;
+    height: 500%;
+    left: -90px;
+  }
+
+  header {
+    text-align: center;
+    background: #000000;
+    width: 169%;
+}
+
+.blog_tile {
+  background-color: black;
+  height: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  position: relative;
+  width: 169%;
+}
+.section_contact_us {
+  margin-top: 1%;
+  border: black;
+  height: 376px;
+  border-style: double;
+  border-width: 10px;
+  background-color: lightgray;
+  opacity: 0.85;
+  border-radius: 10px;
+  width: 163%;
+}
+
+.footer {
+  background-color: black;
+  display: flex;
+  width: 169%;
+  margin-top: 0.5%;
+  opacity: 0.85;
+}
+
+.About li {
+  padding-left: 28%;
+}
+.About h3 {
+  color: orange;
+  text-align: center;
+  padding-left: 40%;
+}
+
+.copyright {
+  background-color: black;
+  opacity: 0.85;
+  width: 169%;
+}
+#p_faq {
+  font-size: medium;
+  padding-left: 19%;
+}
+}

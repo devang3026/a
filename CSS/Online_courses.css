@@ -1,0 +1,276 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.NavBar {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  background-color: #333;
+}
+
+.logo {
+  width: 15%;
+  float: left;
+  height: 5%;
+  margin: 0%;
+}
+
+.logo img {
+  width: 50%;
+  height: 5%;
+}
+
+.links {
+  width: 85%;
+  float: right;
+  margin-left: 20px;
+  /* padding: auto; */
+  padding-top: 0.7%;
+}
+
+.links li {
+  list-style-type: none;
+  float: left;
+  padding-left: 4.7%;
+  padding-right: 4.7%;
+  text-transform: uppercase;
+}
+
+.links ul {
+  margin-top: 2.5%;
+  margin-left: 0%;
+}
+
+.links li a {
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.links li a:hover {
+  border-radius: 100px;
+  border: 1px solid;
+  padding: 5px 10px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .links li {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size:17px;
+  }
+  .extrainfo, .extrainfo2, .extrainfo3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-small;
+}
+
+}
+@media screen and (min-width: 485px) and (max-width: 550px) {
+  .logo {
+    width: 10%;
+  }
+  .logo img {
+    width: 100%;
+    height: 15%;
+  }
+  .links {
+    width: 90%;
+  }
+  .links li {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 10px;
+  }
+  .main_box1 {
+    
+    height: 500px;
+  }
+.extrainfo1
+{
+  font-size: 1px;
+}
+}
+
+@media screen and (max-width: 485px) {
+  .logo {
+    width: 10%;
+  }
+  .logo img {
+    width: 100%;
+    height: 15%;
+  }
+  .links {
+    width: 90%;
+  }
+  .links li {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: xx-small;
+  }
+}
+
+.footer {
+  background-color: #333;
+  display: flex;
+  width: 99%;
+}
+
+.Customer_Service {
+  width: 50%;
+  float: left;
+  margin-left: 10%;
+}
+
+.About {
+  width: 50%;
+  float: right;
+}
+
+.footer h3 {
+  text-align: left;
+  color: rgb(235, 235, 14);
+}
+.footer li {
+  list-style-type: none;
+}
+
+.footer li a {
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+
+/*
+  .NavBar2
+  {
+      overflow: hidden;
+      background-color: #4a4e57;
+      display: flex;
+      width: 100%;
+  }
+
+  .NavBar2 a
+  {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }*/
+
+.main_box1 {
+  display: flex;
+  width: 88%;
+  height: 380px;
+  margin: 3% 6% 3% 6%;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+iframe {
+  padding: 1% 3% 1% 3%;
+  width: 80%;
+  height: 90%;
+}
+.thumanail {
+  width: 44%;
+}
+.descption {
+  width: 55%;
+  text-align: center;
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#title {
+  width: 100%;
+}
+#para {
+  font-size: medium;
+  text-align: left;
+  padding-left: 1%;
+}
+.extrainfo1
+{
+  font-size: xx-small;
+}
+header {
+
+  text-align: center;
+  background: #000000;
+}
+
+
+/* Style the top navigation bar */
+navbar {
+  display: flex;
+  background-color: #333;
+  
+}
+/* Style the navigation bar links */
+navbar a {
+  color: white;
+  padding: 1%  7.242%;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#logo{
+  width: 20%;
+  height: 200%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+  row, navbar {   
+    flex-direction: column;
+  }
+  #logo{
+    width: 45%;
+    height: 500%;
+  }
+
+}
+
+.extrainfo,.extrainfo2,.extrainfo3
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:small;
+}
+
+button {
+  background-color: #333;
+  border: none;
+  border-radius: 18px;
+  font-size: 12px;
+  padding: 13px 29px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}

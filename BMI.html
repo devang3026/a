@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Report</title>
+    <link rel="stylesheet" type="text/css" href="css/BMI.css">
+    <script src="Javascript/BMI.js"></script>
+</head>
+
+<body>
+    <nav>
+
+        <header>
+            <a href="Home.html">
+            <img src="Images/logo1.png" id="logo"></a>
+          </header>
+          <!-- Navigation Bar -->
+          <navbar>
+            <a href="gym_employment.html">GYM JOB</a>
+              <a href="BMI.html">BMI REPORT</a>
+              <a href="login.html">LOGIN</a>
+              <a href="Sign_Up.html">SIGN UP</a>
+              <a href="Contact_us.html">CONTACT US</a>
+          </navbar>
+
+    </nav>
+
+    <main>
+
+        <section class="BMI_form">
+            <form>
+                <fieldset>
+                    <legend> BMI Report</legend>
+                    <br>
+                   
+                    <tr >
+                        <th id="BMI_row">
+                            Enter Your Height : <input type="text" id="Height" placeholder="Your Height in Centimeter" /> &nbsp; &nbsp; <span id="span_height"></span>
+                        <th>
+                    </tr>
+                        <br>
+                        <br>
+                    <tr id="BMI_row">
+                        <td>
+                            Enter Your Weight : <input type="text" id="Weight" placeholder="Your Weight in Kilogram"/> &nbsp; &nbsp; <span id="span_weight"></span>
+                        </td>
+                    </tr>
+                    <br>
+                    <br>
+                    <tr id="BMI_row">
+                        <td>
+                            <input type="button" Id="button" onClick="getBMI()" Value="Calculate Fat %" />
+                        </td>
+                    </tr>
+                    <br>
+                    <p>Your Body Fat Percentage is : </p> <br>
+                    <span id="BMI"></span>
+
+                    <br>
+                    <br>
+                    <p>
+                        BMI Categories:
+                    </p>
+                    <ul>
+                        <li>Underweight = &lt; 18.5</li>
+                        <li> Normal weight = 18.5–24.9</li>
+                        <li>Overweight = 25–29.9</li>
+                        <li>Obesity = BMI of  &gt; 30 </li>
+                      </ul>  
+                    
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="Customer_Service">
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCustomer Service</h3>
+
+
+            <ul>
+
+                <li><a href="Contact_us.html">CONTACT US</a></li>
+                <li><a href="BMI.html">BMI REPORT</a></li>
+                <li><a href="Dashboard.html">GYM JOB</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+
+
+            </ul>
+        </section>
+
+        <section class="About">
+
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAbout</h3>
+
+            <ul>
+
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="index.html">WorkOut Plan</a></li>
+                <li><a href="about_us1.html">About Website</a></li>
+
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

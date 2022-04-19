@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="css/contact_us_1.css">
+</head>
+<body>
+    <nav>
+
+        <header>
+            <a href="Home.html">
+            <img src="Images/logo1.png" id="logo"></a>
+          </header>
+          <!-- Navigation Bar -->
+          <navbar>
+              <a href="gym_employment.html">GYM JOB</a>
+              <a href="BMI.html">BMI REPORT</a>
+              <a href="login.html">LOGIN</a>
+              <a href="Sign_Up.html">SIGN UP</a>
+              <a href="contact_us_1.html">CONTACT US</a>
+          </navbar>
+
+    </nav>
+
+    <div class="carousel-container">
+        <div class="navigation">
+            <div class="prev nav-btn" ><</div>
+            <div class="next nav-btn" >></div>
+        </div>
+
+        <div class="carousel">
+            <div class="item main">
+                <img src="Images/punching-workout.jpg" alt="fitness" />
+            </div>
+            <div class="item">
+                <img src="Images/wide-legged-forward-fold.jpg" alt="fitness" />
+            </div>
+            <div class="item">
+                <img src="Images/pexels-pixabay-235922.jpg" alt="fitness" />
+            </div>
+            <div class="item">
+                <img src="Images/photo-of-a-person-stretching-with-a-smart-watch-on.jpg" alt="fitness" />
+            </div>
+        </div>      
+    </div>
+
+    <section class="blog_tile">
+        <h1 id="blog_h1">
+            Contact US
+        </h1>
+    </section>
+
+    <section class="section_contact_us">
+        <form method='get' onsubmit=" return validate()" action="contact_us_reply.html">
+                <label for="email">Email: </label><br><br>
+                <input type="email" id="email_border" name="email">&nbsp;&nbsp;<span id="email_error"></span><br><br>
+                <label for="message">Message: </label><br><br>
+                <input type="text" id="message_border" name="message">&nbsp;&nbsp;<span id="message_error"></span><br><br>
+                <input type="submit" id="submit" value="Contact Us">
+        </form>
+
+        <aside class="aside_contact_us">
+            <h2 id="h2_aside">Contact</h2>
+            <a href="#">fitnessworld@gmail.com</a><br>
+            <h2 id="h2_aside">Based In</h2>
+            <p>Etobicoke, Canada</p><br>
+
+            <img id="social_media_logos" src="Images/toppng.com-listen-to-talk-2-em-by-eli-28-facebook-twitter-instagram-youtube-logo-921x201.png" alt="social_media_logos">
+        </aside> 
+        <hr>
+        <p id="p_faq">
+            If you have any more Questions.. Please go to our <a id="faq" href="faq.html">FAQ</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <section class="Customer_Service">
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCustomer Service</h3>
+
+
+            <ul>
+
+                <li><a href="Contact_us.html">CONTACT US</a></li>
+                <li><a href="BMI.html">BMI REPORT</a></li>
+                <li><a href="Dashboard.html">GYM JOB</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+
+
+            </ul>
+        </section>
+
+        <section class="About">
+
+            <h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAbout</h3>
+
+            <ul>
+
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="index.html">WorkOut Plan</a></li>
+                <li><a href="about_us1.html">About Website</a></li>
+
+            </ul>
+        </section>
+    </footer>
+    
+  
+
+    <script>
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const images = document.querySelector('.carousel').children;
+        const totalImages = images.length;
+        let index = 0;
+
+        prev.addEventListener('click', () => {
+        nextImage('next');
+        })
+
+        next.addEventListener('click', () => {
+        nextImage('prev');
+        })
+
+        function nextImage(direction) {
+        if(direction == 'next') {
+            index++;
+            if(index == totalImages) {
+            index = 0;
+            }
+        } else {
+            if(index == 0) {
+            index = totalImages - 1;
+            } else {
+            index--;
+            }
+        }
+
+        for(let i = 0; i < images.length; i++) {
+            images[i].classList.remove('main');
+        }
+        images[index].classList.add('main');
+        }
+
+        function validate()
+        {
+            var email=document.getElementById("email_border").value;
+            var message=document.getElementById("message_border").value;
+            var email_error=document.getElementById("email_error");
+            var message_error=document.getElementById("message_error");
+
+            if(email==='')
+            {
+                email_error.innerHTML="Email Required";
+                document.getElementById("email_border").focus();
+                return false;
+            }
+
+            if(email!='')
+            {
+                email_error.innerHTML="";
+            }
+            
+            if(message=='')
+            {
+                message_error.innerHTML="Please Enter Mesasge";
+                document.getElementById("message_border").focus();
+                return false;
+            }
+
+            if(message!='')
+            {
+                message_error.innerHTML="";
+            }
+        }
+    </script>
+</body>
+</html>

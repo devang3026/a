@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/about_us1.css">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+</head>
+<body>
+    <nav>
+
+        <header>
+            <a href="Home.html">
+            <img src="Images/logo1.png" id="logo"></a>
+          </header>
+          <!-- Navigation Bar -->
+          <navbar>
+            <a href="gym_employment.html">GYM JOB</a>
+              <a href="#">BMI REPORT</a>
+              <a href="login.html">LOGIN</a>
+              <a href="Sign_Up.html">SIGN UP</a>
+              <a href="contact_us_1.html">CONTACT US</a>
+          </navbar>
+
+    </nav>
+
+    <div class="carousel-container">
+        <div class="navigation">
+            <div class="prev nav-btn" ><</div>
+            <div class="next nav-btn" >></div>
+        </div>
+
+        <div class="carousel">
+            <div class="item main">
+                <img src="Images/arm-workout.jpg" alt="fitness" />
+            </div>
+            <div class="item">
+                <img src="Images/Man-Doing-One-Armed-Pushups.jpg" alt="fitness" />
+            </div>
+            <div class="item">
+                <img src="Images/woman-with-arms-up.jpg" alt="fitness" />
+            </div>
+            <div class="item">
+                <img src="Images/heavy-lifting-man.jpg" alt="fitness" />
+            </div>
+        </div>      
+    </div>
+
+    <section class="blog_tile">
+        <h1 id="blog_h1">
+            About Website
+        </h1>
+    </section>
+
+    <section class="section_about_us">
+        <p id="about_us_p">
+            <b>Welcome to Fitness World.</b><br><br>
+
+            We provide every information you want. For example, questions regarding diet, want to buy gym equipments etc. In this,
+            you can also find out which gyms are located near you so that, user don’t have to travel far from his
+            location.Especially in this Covid-time, people cannot focus on their fitness due to lockdown. So this website, it will
+            provide online sessions from the gym-instructor. In addition to that, the notes will also be provided by the
+            instructors. So that, the people can focus on their fitness at their home.<br><br>
+
+            Nowadays, there are dearth of platform regarding GYM and fitness for customers to choose from and
+            sometimes they are not aware with the product they are buying due to scarcity of information about diet
+            and fitness. This platform will eliminate the issue by providing all important information via video and
+            appropriate supplements, BMI report and equipment. Moreover, due to Covid people are not able to
+            attend gym and fitness center. Thus this website will devote the one single platform for all fitness
+            enthusiastic people. <br><br>
+
+            Main aim of our website is to provide all the necessary things regarding fitness on one single platform such
+            as, user can purchase supplement, equipment and other things. Apart from that, we have also provided
+            BMI report generator on our platform so user can get to know about his/her BMI level. Besides the
+            equipment and supplement, there are also small number of platforms which are giving diet and fitness
+            related information. And those who are providing these services are charging whopping 10-15$ per month
+            as a subscription fee.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <section class="Customer_Service">
+            <h3>Customer Service</h3>
+
+            <ul>
+
+                <li><a href="Contact_us.html">CONTACT US</a></li>
+                <li><a href="repot.html">REPORT</a></li>
+                <li><a href="gym_employment.html">GYM EMPLOYMENT</a></li>
+
+
+            </ul>
+        </section>
+
+        <section class="About">
+
+            <h3>About</h3>
+
+            <ul>
+
+                <li><a href="About_us.html">ABOUT US</a></li>
+                <li><a href="Service.html">Service</a></li>
+
+            </ul>
+        </section>
+    </footer>
+    
+    <section class="copyright">
+        <p>&copy; CopyRight 2022 Fitness World</p>
+    </section>
+
+    <script>
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        const images = document.querySelector('.carousel').children;
+        const totalImages = images.length;
+        let index = 0;
+
+        prev.addEventListener('click', () => {
+        nextImage('next');
+        })
+
+        next.addEventListener('click', () => {
+        nextImage('prev');
+        })
+
+        function nextImage(direction) {
+        if(direction == 'next') {
+            index++;
+            if(index == totalImages) {
+            index = 0;
+            }
+        } else {
+            if(index == 0) {
+            index = totalImages - 1;
+            } else {
+            index--;
+            }
+        }
+
+        for(let i = 0; i < images.length; i++) {
+            images[i].classList.remove('main');
+        }
+        images[index].classList.add('main');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+body 
+{
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+
+  text-align: center;
+  background: #000000;
+}
+
+
+/* Style the top navigation bar */
+navbar {
+  display: flex;
+  background-color: #333;
+  
+}
+/* Style the navigation bar links */
+navbar a {
+  color: white;
+  padding: 1%  7.242%;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#logo{
+  width: 20%;
+  height: 200%;
+}
+
+.carousel-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    left:30px;
+}
+
+.navigation .prev {
+    position: absolute;
+    z-index: 10;
+    font-size: 25px;
+    top: 40%;
+    left: 10px;
+    font-weight: 700;
+  }
+  .navigation .next {
+    right: 10px;
+    position: absolute;
+    font-size: 25px;
+    z-index: 10;
+    top: 40%;
+  }
+  .navigation .nav-btn {
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  }
+  .navigation .nav-btn:hover {
+    background: white;
+  }
+
+  
+.carousel {
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  
+  }
+  .carousel img {
+    width: 97%;
+    transition: all 0.3s ease;
+    border:8px solid white;
+  }
+  
+  .item {
+    position: absolute;
+    display: none;
+  }
+  
+  .main {
+    display: block;
+  }
+
+  .blog_tile {
+    background-color: black;
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  #blog_h1 {
+    padding-top: 8px;
+    color: orange;
+    text-align: center;
+  }
+
+  .section_about_us
+{
+  margin-top: 1%;
+  border:black;
+  height: 320px;
+  border-style: double;
+  border-width: 10px;
+  background-color: lightgray;
+  opacity: 0.85;
+  border-radius: 10px;
+}
+
+#about_us_p
+{
+  /* margin: 1%; */
+  height: 290px;
+  padding-left: 1%;
+  color: black;
+}
+
+b
+{
+  padding-left: 42%;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+#button {
+    background-color: #343a40;
+    border: none;
+    border-radius: 18px;
+    font-size: 18px;
+    padding: 13px 29px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .footer {
+    background-color: black;
+    display: flex;
+    width: 100%;
+    margin-top: 0.5%;
+    opacity: 0.85;
+  }
+  
+  .Customer_Service {
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+  }
+  
+  .About {
+    width: 50%;
+    float: left;
+  }
+  
+  .About h3
+  {
+    color: orange;
+    text-align: center;
+  }
+  
+  .Customer_Service h3 {
+    text-align: left;
+    color: orange;
+  }
+  .Customer_Service li 
+  {
+    list-style-type: none;
+    position: relative;
+    left: -4%;
+  }
+  
+  .footer li a 
+  {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+  }
+  
+  .About li
+  {
+    padding-left: 39%;
+  }
+  
+  .copyright
+  {
+    background-color: black;
+    opacity: 0.85;
+  }
+  .copyright p
+  {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 2%;
+    margin-top: 0%;
+  }
+
+
+@media screen and (max-width:362px)
+{
+    .carousel-container {
+        width: 600px;
+        height: 400px;
+        position: relative;
+        margin: 0 auto;
+        left: 12px;
+    }
+    .blog_tile {
+        background-color: black;
+        height: 45px;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        position: relative;
+        width: 175%;
+    }
+
+    .section_about_us {
+        margin-top: 1%;
+        border: black;
+        height: 498px;
+        border-style: double;
+        border-width: 10px;
+        background-color: lightgray;
+        opacity: 0.85;
+        border-radius: 10px;
+        width: 169%;
+    }
+
+    #about_us_p {
+        /* margin: 1%; */
+        height: 460px;
+        padding-left: 3%;
+        color: black;
+        padding-right: 3%;
+    }
+
+    b {
+        padding-left: 31%;
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+    }
+
+    .footer {
+        background-color: black;
+        display: flex;
+        width: 175%;
+        margin-top: 0.5%;
+        opacity: 0.85;
+    }
+
+    .About li {
+        padding-left: 28%;
+    }
+
+    .copyright {
+        background-color: black;
+        opacity: 0.85;
+        width: 175%;
+    }
+    header {
+      text-align: center;
+      background: #000000;
+      width: 176%;
+  }
+  row, navbar {
+    flex-direction: column;
+    width: 176%;
+}
+    #logo{
+      width: 45%;
+      height: 500%;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:363px)
+{
+    .carousel-container {
+        width: 600px;
+        height: 400px;
+        position: relative;
+        margin: 0 auto;
+        left: 14px;
+    }
+    .blog_tile {
+      background-color: black;
+      height: 45px;
+      font-family: 'Times New Roman', Times, serif;
+      border-radius: 10px;
+      position: relative;
+      width: 169%;
+  }
+
+    .section_about_us {
+        margin-top: 1%;
+        border: black;
+        height: 504px;
+        border-style: double;
+        border-width: 10px;
+        background-color: lightgray;
+        opacity: 0.85;
+        border-radius: 10px;
+        width: 163%;
+    }
+
+    #about_us_p {
+        /* margin: 1%; */
+        height: 290px;
+        padding-left: 3%;
+        padding-right: 3%;
+        color: black;
+    }
+
+    b {
+        padding-left: 32%;
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+    }
+
+    .footer {
+        background-color: black;
+        display: flex;
+        width: 169%;
+        margin-top: 0.5%;
+        opacity: 0.85;
+    }
+
+    .About li {
+        padding-left: 28%;
+    }
+
+    .copyright {
+        background-color: black;
+        opacity: 0.85;
+        width: 169%;
+    }
+    row, navbar {
+      flex-direction: column;
+      width: 169%;
+  }
+      #logo{
+        width: 45%;
+        height: 500%;
+      }
+
+      header {
+        text-align: center;
+        background: #000000;
+        width: 169%;
+    }
+}
+

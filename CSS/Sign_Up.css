@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 251, 251);
+    width: 35%;
+    height: 100%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    
+    background-image: url(../Images/1108004.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  main {   
+      padding-top: 30px;
+    padding-left: 50px;
+
+  }
+  button {
+    background-color: rgb(100, 98, 98);
+    color: rgb(253, 253, 253);
+    padding: 14px 20px;
+    margin: 8px 90px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  .form {
+      position: center;
+      
+      width: 100%;
+      height: 100%;
+      color: rgb(247, 242, 242);
+  }
+  .form h1{
+      text-align: center;
+      font-size: 30px;
+  }
+  .form p{
+      text-align: center;
+  }
+  .form label{
+      color: rgb(247, 234, 234);
+  }
+
+  
+  /* Float signup buttons and add an equal width */
+   .signupbtn {
+    float: center;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 450px) {
+     .signupbtn {
+       float: center;
+       width: 50%;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(255, 251, 251);
+      width: 100%;
+      height: 100%;
+
+  
+      background-size: 428%;
+      background-position: 30%;
+    }
+    main {   
+      padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1.5%;
+    }
+    .form {
+      
+      width: 100%;
+      height: 100%;
+      color: rgb(247, 242, 242);
+  }
+  .form h1{
+      text-align: center;
+      font-size: 30px;
+  }
+  .form p{
+      text-align: center;
+  }
+  .form label{
+      color: rgb(247, 234, 234);
+  }
+  button {
+    background-color: rgb(100, 98, 98);
+    color: rgb(253, 253, 253);
+    padding: 14px 20px;
+    margin: 8px 90px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    font-weight: bold;
+  }
+  }       
+        /* Full-width input fields */
+    input[type=text], input[type=email], input[type=password] {
+          width: 95%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #9e9898;
+          
+        }
+        
+    input[type=text]:focus, input[type=password]:focus , input[type=email]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+    hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        

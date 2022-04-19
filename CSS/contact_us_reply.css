@@ -1,0 +1,166 @@
+body
+{
+    background: url("../Images/valery-sysoev-LDAirERNzew-unsplash.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.section_contact_us
+{
+    height: 350px;
+    position: relative;
+    top: 95px;
+    background-color: 	rgb(255, 253, 208)  ;
+    transition: 2s;
+}
+
+.tick_mark
+{
+    float: left;
+    margin-top: 8%;
+    margin-left: 29%;
+}
+
+#tick_mark
+{
+    width: fit-content;
+    height: 100px;
+    padding-top: 9%;
+    padding-left: 9%;
+}
+
+.para
+{
+    width: 50%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+
+p
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width:362px)
+{
+    body {
+        background: url(../Images/valery-sysoev-LDAirERNzew-unsplash.jpg) no-repeat fixed;
+        background-position: 52%;
+        background-size: 416%;
+    }
+    
+    .para
+    {
+        width: 57%;
+        float: left;
+        margin-left: 19%;
+        margin-top: 10%;
+    }
+
+    .section_contact_us
+    {
+        height: 380px;
+        position: relative;
+        top: 95px;
+        background-color: 	rgb(255, 253, 208)  ;
+        transition: 2s;
+    }
+
+    a{
+        padding-left: 27%;
+    }
+
+    span
+    {
+        padding-left: 9%;
+    }
+}
+
+@media screen and (max-width:380px) and (min-width:363px)
+{
+    body {
+        background: url(../Images/valery-sysoev-LDAirERNzew-unsplash.jpg) no-repeat fixed;
+        background-position: 52%;
+        background-size: 338%;
+    }
+
+    .para
+    {
+        width: 57%;
+        float: left;
+        margin-left: 22%;
+        margin-top: 10%;
+    }
+
+    .tick_mark
+    {
+        float: left;
+        margin-top: 8%;
+        margin-left: 34%;
+    }
+
+    .section_contact_us
+    {
+        height: 390px;
+        position: relative;
+        top: 95px;
+        background-color: 	rgb(255, 253, 208)  ;
+        transition: 2s;
+    }
+
+    a{
+        padding-left: 27%;
+    }
+
+    span
+    {
+        padding-left: 9%;
+    }
+}
+
+@media screen and (max-width:415px) and (min-width:382px)
+{
+    body {
+        background: url(../Images/valery-sysoev-LDAirERNzew-unsplash.jpg) no-repeat fixed;
+        background-position: 52%;
+        background-size: 338%;
+    }
+
+    .para
+    {
+        width: 57%;
+        float: left;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+    
+    .section_contact_us
+    {
+        height: 390px;
+        position: relative;
+        top: 192px;
+        transition: 2s;
+    }
+
+    .tick_mark
+    {
+        float: left;
+        margin-top: 8%;
+        margin-left: 34%;
+    }
+
+    a{
+        padding-left: 27%;
+    }
+
+    span
+    {
+        padding-left: 9%;
+    }
+}
